@@ -1,0 +1,44 @@
+.container{
+
+    max-width: 600px;
+    background-color: rgb(5, 30, 100);
+padding: 1rem;
+position: relative;
+left: 400px;
+}
+
+.item{
+    /* border: 1px solid rgb(0, 68, 255); */
+    padding: 3px;
+}
+
+.content{
+    overflow: hidden;
+    max-height: 0;
+    transition: 1s ;
+    border: 1px solid greenyellow;
+}
+
+.content:target{
+    max-height: 150px;
+}
+.title{
+    padding: 8px;
+    display: block;
+    text-decoration: none;
+    color: rgb(248, 248, 248);
+    border: 1px solid white;
+}
+
+.title:hover{
+    background: #4650db;
+    color: white;
+}
+
+.content p {
+    text-indent: 20px;
+    color: rgb(204, 204, 204);
+    
+
+}
+
