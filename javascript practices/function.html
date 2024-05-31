@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>functoin</title>
+</head>
+<body>
+    
+
+    <script>
+    //   person1 = {name:'prasad',age:20,place:"erode"}
+    //   person2 = {name:'arun',age:21,place:"cbe",country:"pakistan"}
+       
+
+// multiple function passing
+    //    function getval(emp) {
+    //        let name = emp.name
+    //        let age = emp.age
+    //        let place = emp.place
+    //        let country =emp.country??="india"
+
+           
+    //        console.log("name:",name," ","age:"," ",age," ","place: ",place," ","country:",country);
+    //    }
+    //    getval(person1)
+    //    getval(person2)
+    //    getval(person3={name:"arjun",age:20,place:"chennia"})
+
+    // default parameter
+
+    // function getperson(emp={name:"no name",age:0,place:"no place"}){
+       
+    //     console.log("name:",emp.name," ","age:",emp.age);
+    // }
+
+    // getperson()
+    // getperson(person1)
+
+
+
+    // rest parameter
+    
+   
+    function persons(...param) {
+        
+        return param;
+    }
+    
+     console.log(persons("raju","arun","manu","soni"))
+   
+
+    function fullname(first,last)
+    {
+        
+        return first+" :"+last; 
+    } 
+     console.log(fullname("sanmugam","raja"));  
+       
+    // return values
+//   console.log("hello");
+   
+
+
+function printperson(firstname,last)
+{
+    if(firstname===""){
+    return;
+}
+    return firstname+" "+last
+}
+console.log(printperson("","kumar"))
+
+
+
+// return object and array
+   
+// function getobj(first,last){
+//     return {first,last}
+    
+// }
+// console.log(getobj("suthi","thara"));
+
+
+
+function getfullname(firstname,lastname){
+
+        function addtwoname(name,name2){  //name =jaga,name2 =thish
+            return name+".k"+" "+name2+".l"
+        }
+
+        let result =addtwoname(firstname,lastname)
+        return result
+}
+console.log(getfullname("jaga","thish"));
+
+    //   function getval(person){
+    //     console.log("name :",person.name+" "+"age:",person.age);
+    //   }
+
+    //   getval(person1);
+    //   getval(person2);
+    // //   getval(person1.name,person1.age);
+    // //   getval(person2.name,person2.age);
+    </script>
+    <!-- <script src="script.js"></script> -->
+</body>
+</html>
