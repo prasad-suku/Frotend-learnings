@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filtermethods</title>
+</head>
+<body>
+   
+   <script>
+
+let persons = [
+  { id: 1, name: "anbu", active: true ,age:34},
+  { id: 2, name: "arivu", active: true,age:34 },
+  { id: 3, name: "kalai", active: true,age:14 },
+  { id: 4, name: "siva", active: false,age:55 }
+];
+
+let getfilters = persons.filter(user => user.name =='arivu');
+// console.log(getfilters);
+
+let getages = persons.filter((user)=>user.age>=35)
+// console.log(getages);
+
+   let animals= ['cat','rabbit','dog','elephant']
+
+   let min4letters = animals.filter((animal)=>animal.length>=4)
+   console.log(min4letters);
+
+   let numbers = [16,3,6,8,9,11,12,4,]
+
+   let divby3 = numbers.filter((div)=>div%3===0)
+   console.log(divby3);
+
+   let onlystartswith = persons.filter(person=>person.name.startsWith('a'))
+   console.log(onlystartswith);
+
+   let greaterthan6 = numbers.filter(number=>number>=6)
+   console.log(greaterthan6);
+
+   let includesval = persons.filter(person=>person.name.includes('v'))
+   console.log(includesval);
+
+   </script>
+    <!-- <script src="filtermethods.js"></script> -->
+</body>
+</html>
