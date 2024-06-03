@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reduce method</title>
+</head>
+<body>
+    
+ <h1>reduce methods</h1>
+    <script>
+
+//   example 1 of reduce method sum the given value
+
+//    let donations = [423,5,342,532,63,245,634]
+//    let totaldonation = donations.reduce((previousval,curvalue)=>{
+
+//     console.log("prevousval",previousval);
+//     console.log("currentval",curvalue);
+//     return "Total value:",previousval+curvalue;
+//    })
+    
+
+//    2nd example of reduce method shoppingcart
+
+let shoppingcat = [{ name:'apple',cost:43},
+{name:"orange",cost:65},
+{name:'banana',cost:34}]
+
+// normal way
+// let totalcost = shoppingcat.reduce((preval,curval)=>{
+//     return preval+curval.cost
+// },10)
+// console.log(totalcost);
+ 
+
+// simple way
+let totalcosts = shoppingcat.reduce((prevalue,currvalue)=>prevalue+currvalue.cost,0)
+console.log(totalcosts);
+
+// traditional way whole working function giving to another fun and call it in reduce method
+
+let actionperform_red = (accumvalue,currvalu)=> accumvalue+currvalu.cost;
+
+let totalamt =shoppingcat.reduce(actionperform_red,0)
+console.log(totalamt);
+
+
+// 4th program about reduce method
+
+let colours = ['red','green','red','green','yellow','blue']
+console.log(colours);
+
+let findcount = colours.reduce((accvalue, curvalue) => {
+  if (accvalue[curvalue]) {
+    accvalue[curvalue]++;
+  } else {
+    accvalue[curvalue] = 1;
+  }
+  return accvalue;
+}, {});
+
+console.log(findcount);
+</script>
+
+</body>
+</html>
