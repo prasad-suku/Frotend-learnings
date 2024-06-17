@@ -21,3 +21,5 @@ getperson.apply(person2,["ammapettai",'erode'])
 let getbindvalue = getperson.bind(person2,"singanalur",'tiruchi')
 
 console.log(getbindvalue());
+
+
